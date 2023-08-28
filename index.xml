@@ -1,0 +1,146 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="style.xsl"?>
+<!DOCTYPE container
+[
+<!ELEMENT container (cuisine)>
+<!ELEMENT cuisine  (indian, italian, chinese)>
+<!ELEMENT indian (appetizers, maincourse, desserts)>
+<!ELEMENT italian (appetizers, maincourse, desserts)>
+<!ELEMENT chinese (appetizers, maincourse, desserts)>
+<!ELEMENT appetizers (name, price, quantity)*>
+<!ELEMENT maincourse (name, price, quantity)*>
+<!ELEMENT desserts (name, price, quantity)*>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT price (#PCDATA)>
+<!ELEMENT quantity (#PCDATA)>
+]>
+
+<container>
+    <cuisine>
+        <indian>
+            <appetizers>
+                <name>Paneer Crispy</name>
+                <price>250/-</price>
+                <quantity>6pcs</quantity>
+
+                <name>Hara bhara kebab</name>
+                <price>200/-</price>
+                <quantity>4pcs</quantity>
+
+                <name>Corn Pakoras</name>
+                <price>150/-</price>
+                <quantity>4pcs</quantity>
+            </appetizers>
+            <maincourse>
+                <name>Butter Chicken</name>
+                <price>500/-</price>
+                <quantity>-</quantity>
+
+                <name>Paneer Pasanda</name>
+                <price>350/-</price>
+                <quantity>4pcs</quantity>
+
+                <name>Pav Bhaji</name>
+                <price>250/-</price>
+                <quantity>(2 pavs)</quantity>
+            </maincourse>
+            <desserts>
+                <name>Gulab Jamun</name>
+                <price>150/-</price>
+                <quantity>3pcs</quantity>
+
+                <name>Ras Malai</name>
+                <price>250/-</price>
+                <quantity>4pcs</quantity>
+
+                <name>Pista Barfi</name>
+                <price>250/-</price>
+                <quantity>4pcs</quantity>
+            </desserts>
+        </indian>
+
+        <italian>
+            <appetizers>
+                <name>Mackarel with Wild Asparagus</name>
+                <price>550/-</price>
+                <quantity>4pcs</quantity>
+
+                <name>TarTar di Manzo</name>
+                <price>600/-</price>
+                <quantity>6pcs</quantity>
+
+                <name>Salad with tuna</name>
+                <price>600/-</price>
+                <quantity>4pcs</quantity>
+            </appetizers>
+            <maincourse>
+                <name>asparagus and anchovies rissotto</name>
+                <price>620/-</price>
+                <quantity>-</quantity>
+
+                <name>Pasta with Asparagus</name>
+                <price>400/-</price>
+                <quantity>4pcs</quantity>
+
+                <name>Spaggetti with prawns and mussels</name>
+                <price>650/-</price>
+                <quantity>-</quantity>
+            </maincourse>
+            <desserts>
+                <name>Plum cake</name>
+                <price>250/-</price>
+                <quantity>2pcs</quantity>
+
+                <name>Zabaglione with bitter chocolate sauce</name>
+                <price>450/-</price>
+                <quantity>4pcs</quantity>
+
+                <name>Apple Fritters</name>
+                <price>350/-</price>
+                <quantity>5pcs</quantity>
+            </desserts>
+        </italian>
+
+        <chinese>
+            <appetizers>
+                <name>Spring Rolls</name>
+                <price>250/-</price>
+                <quantity>4pcs</quantity>
+
+                <name>Dim sums</name>
+                <price>400/-</price>
+                <quantity>4pcs</quantity>
+
+                <name>Baozi</name>
+                <price>500/-</price>
+                <quantity>4pcs</quantity>
+            </appetizers>
+            <maincourse>
+                <name>Peking duck roast pecking duck</name>
+                <price>650/-</price>
+                <quantity>-</quantity>
+
+                <name>Kung Pao Chicken</name>
+                <price>610/-</price>
+                <quantity>-</quantity>
+
+                <name>Sesame chicken</name>
+                <price>680/-</price>
+                <quantity>5pcs</quantity>
+            </maincourse>
+            <desserts>
+                <name>Zongsi</name>
+                <price>300/-</price>
+                <quantity>4pcs</quantity>
+
+                <name>Mooncake moon pie</name>
+                <price>450/-</price>
+                <quantity>4pcs</quantity>
+
+                <name>Red bean buns</name>
+                <price>350/-</price>
+                <quantity>-</quantity>
+            </desserts>
+        </chinese>
+    </cuisine>
+</container>
